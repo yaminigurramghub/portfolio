@@ -8,7 +8,7 @@ const FooterSection = () => {
         <p className="mb-2">© 2025 All rights reserved.</p>
         <div className="flex justify-center space-x-4">
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/dr-yamini-saraswathi-gurram-28b9a6293/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-cyan-400"
@@ -16,7 +16,7 @@ const FooterSection = () => {
             <FaLinkedin size={20} />
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="mailto:yaminisaraswathigurram2023@gmail.com"
             className="text-gray-300 hover:text-cyan-400"
           >
             <FaEnvelope size={20} />

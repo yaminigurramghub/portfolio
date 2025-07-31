@@ -39,7 +39,7 @@ const CertificationsSection = ({ id, title, certifications }) => {
         <h2 className="text-2xl font-bold text-cyan-500 mb-8">{title}</h2>
         <div className="w-full">
           {certifications.map((cert, index) => {
-            const logoSrc = `${process.env.PUBLIC_URL}/icons/${cert.organization
+            const logoSrc = `${process.env.PUBLIC_URL}/icons/${cert.name
               .toLowerCase()
               .replace(/\s/g, "-")}.png`;
             return (

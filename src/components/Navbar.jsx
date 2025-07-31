@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { IoLogoGithub } from "react-icons/io";
 import { FaEnvelope, FaRegFileAlt } from "react-icons/fa";
 
 const Navbar = ({ title, onBack, resumeLink }) => {
@@ -49,7 +48,7 @@ const Navbar = ({ title, onBack, resumeLink }) => {
               <FaRegFileAlt size={24} />
             </a>
             <a
-              href="https://www.linkedin.com/in/nikeshbiraggari"
+              href="https://www.linkedin.com/in/dr-yamini-saraswathi-gurram-28b9a6293/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -59,7 +58,7 @@ const Navbar = ({ title, onBack, resumeLink }) => {
                 size={24}
               />
             </a>
-            <a href="mailto:your.email@example.com">
+            <a href="mailto:yaminisaraswathigurram2023@gmail.com">
               <FaEnvelope
                 title="Email"
                 className="text-white hover:text-cyan-300 transition duration-300"
@@ -93,33 +92,6 @@ const Navbar = ({ title, onBack, resumeLink }) => {
             </li>
             <li>
               <a
-                href="#skills"
-                className="text-lg hover:text-cyan-300 hover:underline transition duration-300"
-                onClick={(e) => handleNavClick(e, "skills")}
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              <a
-                href="#experience"
-                className="text-lg hover:text-cyan-300 hover:underline transition duration-300"
-                onClick={(e) => handleNavClick(e, "experience")}
-              >
-                Experience
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="text-lg hover:text-cyan-300 hover:underline transition duration-300"
-                onClick={(e) => handleNavClick(e, "projects")}
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
                 href="#education"
                 className="text-lg hover:text-cyan-300 hover:underline transition duration-300"
                 onClick={(e) => handleNavClick(e, "education")}
@@ -129,11 +101,20 @@ const Navbar = ({ title, onBack, resumeLink }) => {
             </li>
             <li>
               <a
-                href="#achievements"
+                href="#experience"
                 className="text-lg hover:text-cyan-300 hover:underline transition duration-300"
-                onClick={(e) => handleNavClick(e, "achievements")}
+                onClick={(e) => handleNavClick(e, "experience")}
               >
-                Achievements
+                Professional Experience
+              </a>
+            </li>
+            <li>
+              <a
+                href="#vexperience"
+                className="text-lg hover:text-cyan-300 hover:underline transition duration-300"
+                onClick={(e) => handleNavClick(e, "vexperience")}
+              >
+                Volunteer Experience
               </a>
             </li>
             <li>
