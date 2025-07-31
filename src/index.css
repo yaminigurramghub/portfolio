@@ -1,0 +1,76 @@
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 5s ease-in-out forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 3s linear forwards; /* 3s to match the timer duration */
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 1s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease-out;
+}
+
+.animate-scroll-icons {
+  animation: scrollIcons 20s linear infinite;
+  display: flex;
+  width: max-content; /* Allows the flex container to expand with icons */
+}
+
+@keyframes scrollIcons {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Moves half the width to loop seamlessly */
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
